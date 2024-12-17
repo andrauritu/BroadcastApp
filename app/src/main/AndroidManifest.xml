@@ -17,5 +17,12 @@
             </intent-filter>
         </activity>
 
+        <receiver android:name=".MyExplicitReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.example.broadcastapp.EXPLICIT_BROADCAST" />
+            </intent-filter>
+        </receiver>
+
     </application>
 </manifest>
