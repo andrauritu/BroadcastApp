@@ -4,13 +4,28 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:padding="16dp">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Listening for Airplane Mode changes..."
         android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editTextMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:hint="Enter message to hash"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/buttonSendHash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send Hashed Message" />
 
     <Button
         android:id="@+id/send_broadcast_button"
